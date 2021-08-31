@@ -31,7 +31,7 @@ class Api {
 if(isset($_GET['url'])) {
     Api::open();
 } else {
-    echo json_encode(array('status' => 'erro', 'dados' => 'Rota não inserida!'));
+    echo json_encode(array('status' => 'erro', 'dados' => 'Rota não inserida!'), JSON_UNESCAPED_UNICODE);
 }
 
 ?>
